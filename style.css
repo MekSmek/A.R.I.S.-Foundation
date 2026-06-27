@@ -67,6 +67,7 @@ p {
     line-height: 1.4;
     list-style: none;
     text-align: left;
+
 }
 
 ul li:before {
@@ -82,6 +83,7 @@ ul li:before {
     width: 256px;
     justify-content: center;
     align-items: center;
+        margin-top: 20px;
 }
 
 .info2 {
