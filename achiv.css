@@ -1,0 +1,166 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(cloud2.png);
+    max-width: 320px;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.line {
+    border: none;
+    height: 6px;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+.pictures {
+    display: flex;
+    justify-content: space-around;
+}
+
+.global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.under {
+    font-size: 11px;
+    max-width: 270px;
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+.window {
+    margin-top: -192px;
+}
+
+.text {
+    font-size: 16px;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+.mlist {
+    height: 175px;
+    max-width: 298px;
+    font-size: 15px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.4;
+    list-style: none;
+}
+
+ul li:before {
+    content: "–";
+    position: relative;
+    left: -20px;
+}
+
+.info2 {
+    text-align: center;
+    font-size: 13px;
+}
+
+.butts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.butts button {
+    width: 290px;
+    height: 23px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #1a1a1a;
+    margin-top: 30px;
+    font-size: 12px;
+    background-color: #D9D9D9;
+}
+
+button {
+    text-align: center;
+}
+
+.all {
+    display: flex;
+    align-items: center;   
+}
+
+.icon img {
+    width: 36px;          
+    height: 36px;
+    display: block;
+}
+
+.ftext {
+font-size: 12px;
+margin-left: 10px;
+line-height: 1.6;
+}
+
+.icon {
+
+    margin-right: 20px;
+
+}
+
+.pop {
+    margin-top: 20px;
+}
+
+footer {
+    background-image: url('Rectangle 21.png');
+    background-size: 320px 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comps {
+    display: flex;
+    justify-content: center;
+}
+
+.comps img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.cor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.corob {
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    width: 306px;
+    height: 67px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,187 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(clo3.png);
+    max-width: 320px;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.line {
+    border: none;
+    height: 6px;
+    width: 100%;
+    background-color: #D9D9D9;
+    margin-top: -10px;
+}
+
+.pictures {
+    display: flex;
+    justify-content: space-around;
+}
+
+.global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.under {
+    font-size: 11px;
+    max-width: 270px;
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+.window {
+    margin-top: -192px;
+}
+
+.text {
+    font-size: 16px;
+    margin-left: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mlist {
+    height: 175px;
+    max-width: 298px;
+    font-size: 15px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.4;
+    list-style: none;
+}
+
+ul li:before {
+    content: "–";
+    position: relative;
+    left: -20px;
+}
+
+.info2 {
+    text-align: center;
+    font-size: 13px;
+}
+
+.butts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.butts button {
+    width: 290px;
+    height: 23px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #1a1a1a;
+    margin-top: 30px;
+    font-size: 12px;
+    background-color: #D9D9D9;
+}
+
+button {
+    text-align: center;
+}
+
+/* Футер */
+
+.line2 {
+    width: 320px;
+    height: 6px;
+    display: block;
+    margin: 0 auto 40px auto;
+    background-color: #D9D9D9;
+}
+
+.all {
+    display: flex;
+    align-items: center;   
+}
+
+.icon img {
+    width: 36px;          
+    height: 36px;
+    display: block;
+      margin-right: 20px;
+}
+
+.ftext {
+font-size: 12px;
+margin-left: 10px;
+line-height: 1.6;
+
+}
+
+footer {
+    background-image: url('Rectangle 21.png');
+    background-size: 320px 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pop {
+    margin-top: 20px;
+}
+
+/* Слайдер */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 320px;
+}
+
+.slider-wrapper {
+    width: 240px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.slider-track img {
+    width: 240px;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+}
+
+.slider-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #CECECE;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.slider-btn:hover {
+    color: #999;
+}

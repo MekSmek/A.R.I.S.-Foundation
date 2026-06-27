@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sotr.css">
+    <title>A.R.I.S. Foundation</title>
+</head>
+<body>
+    <div class="name"><p>A.R.I.S. Foundation</p></div>
+    <div class="things">
+        <div class="line"></div>
+        <div class="pictures">
+         <a href="sotr.html"><div class="avatar"><img src="avatar.svg" alt=""></div></a> 
+            <a href="achiv.html"><div class="files"><img src="files.svg" alt=""></div></a>
+           <a href="danger.html"><div class="danger"><img src="danger.svg" alt=""></div></a> 
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <div class="text"><p>Наши сотрудники</p></div>
+
+    <!-- СЛАЙДЕР -->
+<div class="slider-container">
+    <button class="slider-btn prev" onclick="prevSlide()">◀</button>
+    <div class="slider-wrapper">
+        <div class="slider-track" id="sliderTrack">
+            <img src="1.png" alt="Сотрудник 1">
+            <img src="2.png" alt="Сотрудник 2">
+            <img src="3.png" alt="Сотрудник 3">
+            <img src="4.png" alt="Сотрудник 4">
+            <img src="5.png" alt="Сотрудник 5">
+            <img src="6.png" alt="Сотрудник 6">
+        </div>
+    </div>
+    <button class="slider-btn next" onclick="nextSlide()">▶</button>
+</div>
+
+    <div class="info2">
+        <p>«A.R.I.S. foundation» с момента своего основания уделяет особое внимание сфере управления персоналом. Политика Компании направлена на формирование профессиональной команды, каждый член которой стремится выполнять свою работу на высочайшем уровне. Всех сотрудников «A.R.I.S. foundation» объединяет цель — внести весомый вклад в развитие научной среды и принести пользу сообществу по исследованиям аномалий во всём мире.</p>
+    </div>
+
+    <div class="butts">
+        <a href="index.html"><button>На главную</button></a>
+    </div>
+    <div class="pop"></div>
+<div class="line"></div>
+</body>
+<footer>
+    <div class="all">
+        <p class="ftext">© 1968-2026 A.R.I.S. Foundation/Anomaly Research, Indetification & Security.<br>Все права защищены</p>
+        <div class="icon"><img src="icon.svg" alt=""></div>
+    </div>
+</footer>
+<script>
+    let currentIndex = 0;
+    const track = document.getElementById('sliderTrack');
+    const slides = track.querySelectorAll('img');
+    const totalSlides = slides.length;
+    const slideWidth = 240;
+
+    console.log('Всего слайдов:', totalSlides);  // проверка в консоли
+
+    function updateSlider() {
+        const offset = -currentIndex * slideWidth;
+        track.style.transform = 'translateX(' + offset + 'px)';
+        console.log('Текущий индекс:', currentIndex);  // проверка в консоли
+    }
+
+    function nextSlide() {
+        currentIndex++;
+        if (currentIndex >= totalSlides) {
+            currentIndex = 0;
+        }
+        updateSlider();
+    }
+
+    function prevSlide() {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = totalSlides - 1;
+        }
+        updateSlider();
+    }
+</script>
+
+</html>
